@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Player Container */
+.player {
+
+  max-width: 350px;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), -8px -8px 16px rgba(255, 255, 255, 0.2);
+  background-color: var(--player-bg, #fff);
+}
+
+/* Header */
+.player h2 {
+  justify-content: center;
+  padding: 5px;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+.track-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Information Section */
+#trackName {
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* Progress Bar */
+#progressBar {
+  cursor: pointer;
+  width: 100%;
+  height: 8px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin: 15px 0;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s;
+
+}
+
+#progress {
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 5px 0 0 5px;
+  transition: width 0.2s;
+}
+
+#progressBar:hover {
+  background-color: #ccc; /* Slightly darker on hover */
+}
+
+/* Control Buttons */
+button {
+  border: 2px solid white;
+  padding: 3px 6px;
+  background: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+  margin: 2px;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+button:hover {
+  color: #4caf50;
+}
+
+/* Seek Slider */
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  background: transparent;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #4caf50;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  transition: width 0.2s;
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+  width: 20px;
+}
+
+#visualizer {
+  width: 100%;
+  height: 150px;
+  background-color: #333;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.current-playlist {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+select {
+  margin: auto 20px;
+}
+
+button #deletePlaylistBtn {
+  margin: 60px;
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+}
