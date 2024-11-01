@@ -13,9 +13,6 @@ body {
 
 /* Player Container */
 .player {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   max-width: 350px;
   width: 100%;
   padding: 20px;
